@@ -1,0 +1,7 @@
+# Normalise line endings: these files are consumed on macOS and Linux.
+* text=auto eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.zip binary
