@@ -159,7 +159,7 @@ Expect `checkpoint(demo): ...` messages. If the files changed but there are no c
 |---|---|
 | `--dest DIR` | Target skills directory. Created if missing. |
 | `--copy` | Copy directories (default). Deterministic; re-run after `git pull`. |
-| `--link` | Symlink each skill. Live-updates on `git pull`, but depends on the harness following symlinked directories — unverified for most harnesses. |
+| `--link` | Symlink each skill. Live-updates on `git pull`, but depends on the harness following symlinked directories — unverified for most harnesses. On Git-Bash for Windows `ln -s` silently copies instead, so `--link` degrades to `--copy` there. |
 | `--skills a,b` | Install a subset. Default: every directory under `skills/`. |
 | `--force` | Overwrite an existing install. |
 

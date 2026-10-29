@@ -61,9 +61,12 @@ export CHECKPOINT_VAULT_PATH="$HOME/Git/vault"
 #    tell the agent:  add task write the migration
 #    tell the agent:  checkpoint demo
 #    new session, tell the agent:  resume demo
+
+# 5. Self-check
+~/agent-skills/verify.sh
 ```
 
-If step 4 works, the setup is correct.
+If step 4 works, the setup is correct. `verify.sh` checks the repo itself, not your install.
 
 ---
 
@@ -75,6 +78,7 @@ agent-skills/
 ├── AGENTS.md            # trigger router — drop into any workspace, works with zero skill system
 ├── INSTALL.md           # per-harness install paths and env var setup
 ├── install.sh           # copies or links skills into a harness skills directory
+├── verify.sh            # self-check: structure, frontmatter, portability, git hygiene, installer
 └── skills/
     ├── checkpoint/
     │   ├── SKILL.md                          # authoritative procedure
